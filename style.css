@@ -10,50 +10,123 @@
     margin: 0px;
 }
 body {
-    background: #333336;
-    color: #CCCCC5;
+    display: grid;
+    background: #333335;
+    padding: 0px;
+    margin: 0px;
+    color: #FAF9F6;
+    height: 100vh
+    width: 100%;
 }
 header h1 {
     padding: 10px;
     box-shadow: 1px 1px 3px #222221, 1px 1px 3px #222221;
-    background: #00886C;
+    text-shadow: 1px 2px #222221;
+    background: #333335;
     text-align: center;
 }
-main h2 {
-    letter-spacing: 2px;
-    text-decoration: underline;
-    font-style: italic;
-    padding: 1em 1em 0em;
-    font-size: 16px;
-    color: #00886C;
+main{
+    padding: 1em;
 }
-.container {
+main h2 {
+    text-shadow: 1px 2px #222221;
+    padding: 1em 1em 0em;
+    color: #FAF9F6;
+}
+main form{
     display: grid;
     padding: 1em;
-    gap: 10px;
+    gap: 8px;
 }
-.mv {
+main form input{
     width: 100%;
-    position: relative;
-    overflow: hidden;
-    padding-top: 56.25%;
-}
-.mv iframe {
-    border: none;
+    font-size: 16px;
     outline: none;
-    background: #000;
-    border-radius: 5px;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    bottom: 0px;
-    right: 0px;
-    left: 0px;
-    top: 0px;
+    border: 2px solid silver;
+    background: white;
+    border-radius: 15px;
+    padding: 10px;
+}
+main form .submit{
+    text-transform: uppercase;
+    box-shadow: inset 3px 5px #0088CC, inset 3px 3px 5px #0088CC;
+    background: #0088CC;
+    cursor: pointer;
+    border: 2px solid #FAF9F6;
+    border-radius: 15px 30px;
+    color: #FAF9F6;
 }
 footer h3 {
     text-align: center;
     padding-bottom: 14px;
+    padding-top: 10px;
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    text-shadow: 1px 2px #222221;
+    box-shadow: 1px 1px 3px #222221, 1px 2px 15px #222221;
+    background: #333335;
+    text-align: center;
+}
+.ad-space-one{
+    width: 320px;
+    height: 50px;
+    background: #000;
+    position: fixed;
+    border-radius: 5px;
+    cursor: pointer;
+    top: 12%;
+}
+.ad-space-two{
+    width: 300px;
+    height: 250px;
+    background: #000;
+    position: fixed;
+    cursor: pointer;
+    display: none;
+    transform: translate(-50%, -50%);
+    animation-name: fade;
+    border-radius: 5px;
+    animation-direction: ease-in-out;
+    animation-duration: 1.5s;
+    left: 50%;
+    top: 50%;
+}
+.ad-space-two button{
+    display: block;
+    float: right;
+    padding: 4px;
+    border: 1px solid #FAF9F6;
+    outline: none;
+    cursor: pointer;
+    background: #0088CC;
+    border-radius: 5px;
+    margin: 4px;
+    color: inherit;
+}
+.mv{
+    border: 2px solid #FAF9F6;
+    outline: none;
+    color: inherit;
+    cursor: pointer;
+    background: #0088CC;
+    height: 48px;
+    width: 48px;
+    border-radius: 50%;
+    position: fixed;
+    padding: .75em;
+    bottom: 10%;
+    right: 5%;
+}
+@keyframes fade{
+    from{
+        margin-top: 300px;
+        opacity: 0;
+    }
+    to{
+        margin-top: 0px;
+        opacity: 1;
+    }
 }
 @media screen and (min-width: 700px) {
     main {
