@@ -1,8 +1,4 @@
 window.addEventListener('load', () => {
-    setTimeout(function() {
-        let adOne = document.querySelector('.ad-space-two');
-        adOne.style.display = 'block';
-    }, 1000);
     document.getElementById('closead').addEventListener('click', () => {
         let adOne = document.querySelector('.ad-space-two');
         adOne.style.display = 'none';
@@ -12,3 +8,7 @@ window.addEventListener('load', () => {
         alert('Under Development')
     });
 });
+setTimeout(function() {
+    let adOne = document.querySelector('.ad-space-two');
+    adOne.style.display = 'block';
+}, 1000);
