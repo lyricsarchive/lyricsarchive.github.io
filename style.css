@@ -49,6 +49,7 @@ main form input{
     font-size: 16px;
     outline: none;
     border: 2px solid silver;
+    text-align: center;
     background: white;
     border-radius: 15px;
     padding: 10px;
@@ -65,7 +66,7 @@ main form .submit{
 footer{
     padding-bottom: 14px;
     padding-top: 10px;
-    position: absolute;
+    position: fixed;
     width: 100%;
     bottom: 0px;
     text-shadow: 1px 2px #222221;
@@ -85,6 +86,6 @@ footer h3{
     transform: translate(-50%, -50%);
     border-radius: 5px;
     cursor: pointer;
-    top: 14%;
+    top: 15%;
     left: 50%;
 }
